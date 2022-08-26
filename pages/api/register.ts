@@ -26,8 +26,8 @@ export default async function handler(
 
       const body: API.RegisterProps = JSON.parse(req.body)
 
-      await users.insertOne({ ...body })
-      res.status(200).json({ success: true })
+      const result = await users.insertOne({ ...body })
+      res.status(200).json({ success: true, isRegister: result.insertedId ? true : false })
     } else {
       new Error('数据库连接失败')
     }

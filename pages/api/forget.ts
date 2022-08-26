@@ -26,8 +26,8 @@ export default async function handler(
 
       const body: API.RegisterProps = JSON.parse(req.body)
 
-      await users.updateOne({ email: body.email }, { $set: { password: body.password } })
-      res.status(200).json({ success: true })
+      const result = await users.updateOne({ email: body.email }, { $set: { password: body.password } })
+      res.status(200).json({ success: true, isReset: result.matchedCount === 1 ? true : false })
     } else {
       new Error('数据库连接失败')
     }
