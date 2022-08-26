@@ -6,7 +6,7 @@ type Props = {
 export const createMail = ({ toEmail, code }: Props) => {
   return {
     from: `"tohsaka888"<tohsaka888@qq.com>`,// 发件人
-    subject: '掘金登录验证码',//邮箱主题
+    subject: '程序员之家注册验证码',//邮箱主题
     to: toEmail,//收件人，这里由post请求传递过来
     // 邮件内容，用html格式编写
     html: `
