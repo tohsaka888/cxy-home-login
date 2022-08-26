@@ -22,12 +22,13 @@ export default async function handler(
     const db = await connectDB()
     if (db) {
       // select collection
-      const users = await db.collection('users')
+      const authcode = await db.collection('authcode')
 
-      const body: API.RegisterProps = req.body
+      const body: API.AuthCodeProps = req.body
 
-      await users.insertOne({ ...body })
-      res.status(200).json({ success: true })
+      const result = await authcode.findOne({ ...body })
+
+      res.status(200).json({ success: true, canRegister: result?._id ? true : false })
     } else {
       new Error('数据库连接失败')
     }
