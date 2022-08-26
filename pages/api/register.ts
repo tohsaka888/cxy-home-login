@@ -24,7 +24,7 @@ export default async function handler(
       // select collection
       const users = await db.collection('users')
 
-      const body: API.RegisterProps = req.body
+      const body: API.RegisterProps = JSON.parse(req.body)
 
       await users.insertOne({ ...body })
       res.status(200).json({ success: true })
