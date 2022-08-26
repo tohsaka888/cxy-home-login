@@ -12,13 +12,14 @@
     "cors": "^2.8.5",
     "mongodb": "^4.9.0",
     "next": "12.2.5",
+    "nodemailer": "^6.7.8",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "svg-captcha": "^1.4.0"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
     "@types/node": "18.7.13",
+    "@types/nodemailer": "^6.4.5",
     "@types/react": "18.0.17",
     "@types/react-dom": "18.0.6",
     "eslint": "8.22.0",
