@@ -13,6 +13,6 @@ declare namespace API {
 
   type AuthCodeProps = {
     code: string;
-    id: string;
+    email: string;
   }
 }
