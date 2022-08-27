@@ -3,6 +3,7 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import Cors from 'cors'
 import { runMiddleware } from '@utils/server/runMiddleware'
 import { connectDB } from '@utils/server/connectDB'
+import { generateAccessToken } from '@utils/server/generateAccessToken'
 
 
 
@@ -20,14 +21,17 @@ export default async function handler(
     // Run the middleware
     await runMiddleware(req, res, cors)
     const db = await connectDB()
+    console.log(req.body)
     if (db) {
       // select collection
       const users = await db.collection('users')
 
-      const body: { username: string; password: string } = JSON.parse(req.body)
-      const result = await users.findOne({ ...body })
+      const body: { username: string; password: string } = req.body
 
-      res.status(200).json({ success: true, canLogin: result ? true : false })
+      const result = await users.findOne({ ...body })
+      const token = generateAccessToken({ email: result?.email, username: result?.username })
+
+      res.status(200).json({ success: true, canLogin: result ? true : false, token })
     } else {
       new Error('数据库连接失败')
     }
