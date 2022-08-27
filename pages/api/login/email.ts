@@ -26,7 +26,7 @@ export default async function handler(
       // select collection
       const users = await db.collection('users')
 
-      const body: { email: string; password: string } = JSON.parse(req.body)
+      const body: { email: string; password: string } = req.body
       const result = await users.findOne({ ...body })
       const token = generateAccessToken(result?.username || '')
 

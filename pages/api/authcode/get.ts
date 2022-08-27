@@ -25,7 +25,7 @@ export default async function handler(
     if (db) {
       // select collection
       const authcode = await db.collection('authcode')
-      const body: { email: string } = JSON.parse(req.body)
+      const body: { email: string } = req.body
 
       //生成6位随机验证码
       const code = String(Math.floor(Math.random() * 1000000)).padEnd(6, '0')

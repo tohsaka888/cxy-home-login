@@ -24,7 +24,7 @@ export default async function handler(
       // select collection
       const users = await db.collection('users')
 
-      const body: API.RegisterProps = JSON.parse(req.body)
+      const body: API.RegisterProps = req.body
 
       const result = await users.updateOne({ email: body.email }, { $set: { password: body.password } })
       res.status(200).json({ success: true, isReset: result.matchedCount === 1 ? true : false })

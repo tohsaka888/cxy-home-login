@@ -24,7 +24,7 @@ export default async function handler(
       // select collection
       const authcode = await db.collection('authcode')
 
-      const body: API.AuthCodeProps = JSON.parse(req.body)
+      const body: API.AuthCodeProps = req.body
 
       const result = await authcode.findOne({ ...body })
 
