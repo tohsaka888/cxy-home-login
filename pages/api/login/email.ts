@@ -3,6 +3,8 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import Cors from 'cors'
 import { runMiddleware } from '@utils/server/runMiddleware'
 import { connectDB } from '@utils/server/connectDB'
+import { Jwt } from 'jsonwebtoken'
+import { generateAccessToken } from '@utils/server/generateAccessToken'
 
 
 
@@ -26,8 +28,9 @@ export default async function handler(
 
       const body: { email: string; password: string } = JSON.parse(req.body)
       const result = await users.findOne({ ...body })
+      const token = generateAccessToken(result?.username || '')
 
-      res.status(200).json({ success: true, canLogin: result ? true : false })
+      res.status(200).json({ success: true, canLogin: result ? true : false, token })
     } else {
       new Error('数据库连接失败')
     }
