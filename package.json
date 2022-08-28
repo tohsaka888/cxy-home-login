@@ -16,8 +16,7 @@
     "next-swagger-doc": "^0.3.6",
     "nodemailer": "^6.7.8",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "swagger-ui-react": "^4.14.0"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
@@ -28,6 +27,7 @@
     "@types/react-dom": "18.0.6",
     "eslint": "8.22.0",
     "eslint-config-next": "12.2.5",
+    "swagger-ui-react": "^4.14.0",
     "typescript": "4.8.2"
   }
 }
