@@ -7,6 +7,7 @@ specifiers:
   '@types/nodemailer': ^6.4.5
   '@types/react': 18.0.17
   '@types/react-dom': 18.0.6
+  '@types/swagger-ui-react': ^4.11.0
   cors: ^2.8.5
   eslint: 8.22.0
   eslint-config-next: 12.2.5
@@ -37,6 +38,7 @@ devDependencies:
   '@types/nodemailer': 6.4.5
   '@types/react': 18.0.17
   '@types/react-dom': 18.0.6
+  '@types/swagger-ui-react': 4.11.0
   eslint: 8.22.0
   eslint-config-next: 12.2.5_shit3uhl6a7megkzgoz6xssnfa
   swagger-ui-react: 4.14.0_biqbaboplfbrettd7655fr4n2y
@@ -361,6 +363,12 @@ packages:
 
   /@types/scheduler/0.16.2:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
+    dev: true
+
+  /@types/swagger-ui-react/4.11.0:
+    resolution: {integrity: sha512-WPMR+GWbLd7zvY/uOTGzGzP44zK2rIZSnU00+pDR2YANnEV6/qj0kqYfdSY1Vk6qdvI7dR0Tx8JEMgUUrUQDjw==}
+    dependencies:
+      '@types/react': 18.0.17
     dev: true
 
   /@types/unist/2.0.6:
