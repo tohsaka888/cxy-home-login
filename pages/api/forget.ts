@@ -4,7 +4,15 @@ import Cors from 'cors'
 import { runMiddleware } from '@utils/server/runMiddleware'
 import { connectDB } from '@utils/server/connectDB'
 
-
+/**
+ * @openapi
+ * /api/forget:
+ *   get:
+ *     description: 找回密码
+ *     responses:
+ *       200:
+ *         description: Returns a mysterious string.
+ */
 
 const cors = Cors({
   methods: ['POST', 'GET', 'HEAD'],
