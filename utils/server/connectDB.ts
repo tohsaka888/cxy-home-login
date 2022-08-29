@@ -11,7 +11,7 @@ export const connectDB = async () => {
     try {
       await client.connect()
       db = await client.db('cxy-home')
-    } finally {
+    } catch (e) {
       await client.close()
     }
   }
