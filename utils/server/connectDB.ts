@@ -1,6 +1,6 @@
 import { Db, MongoClient } from 'mongodb'
 
-const uri = process.env.mongoUri as string
+const uri = process.env.MONGODB_URI as string
 
 const client = new MongoClient(uri)
 
@@ -11,7 +11,7 @@ export const connectDB = async () => {
     try {
       await client.connect()
       db = await client.db('cxy-home')
-    } catch {
+    } finally {
       await client.close()
     }
   }
