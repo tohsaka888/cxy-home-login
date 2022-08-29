@@ -1,3 +1,4 @@
+import { connectDB } from "@utils/server/connectDB";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 import { createSwaggerSpec } from "next-swagger-doc";
 import dynamic from "next/dynamic";
@@ -10,6 +11,7 @@ function ApiDoc({ spec }: InferGetStaticPropsType<typeof getStaticProps>) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
+  connectDB()
   const spec: Record<string, any> = createSwaggerSpec({
     apiFolder: "pages/api",
     schemaFolders: ["models"],
