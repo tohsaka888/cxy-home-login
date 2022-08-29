@@ -6,7 +6,40 @@ import { connectDB } from '@utils/server/connectDB'
 import { createMail } from '@utils/server/createMail'
 import mailconfig from 'config/mailconfig'
 
-
+/**
+ * @openapi
+ * /api/authcode/get:
+ *   post:
+ *     description: 获取邮箱验证码
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 description: 邮箱
+ *             required:
+ *               - email
+ *               - password
+ *             example:
+ *               email: 156132264@qq.com
+ *     responses:
+ *       200:
+ *         description: 返回是否发送
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success: 
+ *                   type: boolean
+ *         example:
+ *           success: true
+ *               
+ */
 
 const cors = Cors({
   methods: ['POST', 'GET', 'HEAD'],

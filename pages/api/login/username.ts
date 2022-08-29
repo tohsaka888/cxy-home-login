@@ -5,7 +5,49 @@ import { runMiddleware } from '@utils/server/runMiddleware'
 import { connectDB } from '@utils/server/connectDB'
 import { generateAccessToken } from '@utils/server/generateAccessToken'
 
-
+/**
+ * @openapi
+ * /api/login/username:
+ *   post:
+ *     description: 用户名登录
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               username:
+ *                 type: string
+ *                 description: 用户名
+ *               password:
+ *                 type: string
+ *                 description: 密码
+ *             required:
+ *               - username
+ *               - password
+ *             example:
+ *               username: tohsaka888
+ *               password: 123456
+ *     responses:
+ *       200:
+ *         description: 返回是否登录成功,token
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success: 
+ *                   type: boolean
+ *                 canLogin: 
+ *                   type: boolean
+ *                 token:
+ *                   type: string
+ *         example:
+ *           success: true
+ *           canLogin: true
+ *           token: xxxxxxxxxxxxxxxxxx
+ */
 
 const cors = Cors({
   methods: ['POST', 'GET', 'HEAD'],

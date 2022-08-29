@@ -7,11 +7,47 @@ import { connectDB } from '@utils/server/connectDB'
 /**
  * @openapi
  * /api/register:
- *   get:
- *     description: 找回密码
+ *   post:
+ *     description: 注册
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 description: 邮箱
+ *               password:
+ *                 type: string
+ *                 description: 密码
+ *               username:
+ *                 type: string
+ *                 description: 用户名
+ *             required:
+ *               - email
+ *               - password
+ *             example:
+ *               email: 156132264@qq.com
+ *               password: 123456
+ *               username: tohsaka888
  *     responses:
  *       200:
- *         description: Returns a mysterious string.
+ *         description: 返回是否注册成功
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success: 
+ *                   type: boolean
+ *                 isRegister: 
+ *                   type: boolean
+ *         example:
+ *           success: true
+ *           isRegister: true
+ *               
  */
 
 const cors = Cors({

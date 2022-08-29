@@ -7,11 +7,43 @@ import { connectDB } from '@utils/server/connectDB'
 /**
  * @openapi
  * /api/forget:
- *   get:
+ *   post:
  *     description: 找回密码
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 description: 邮箱
+ *               password:
+ *                 type: string
+ *                 description: 密码
+ *             required:
+ *               - email
+ *               - password
+ *             example:
+ *               email: 156132264@qq.com
+ *               password: 123456
  *     responses:
  *       200:
- *         description: Returns a mysterious string.
+ *         description: 返回是否修改成功
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success: 
+ *                   type: boolean
+ *                 isReset: 
+ *                   type: boolean
+ *         example:
+ *           success: true
+ *           isReset: true
+ *               
  */
 
 const cors = Cors({

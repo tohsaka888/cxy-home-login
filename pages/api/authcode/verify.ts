@@ -4,7 +4,46 @@ import Cors from 'cors'
 import { runMiddleware } from '@utils/server/runMiddleware'
 import { connectDB } from '@utils/server/connectDB'
 
-
+/**
+ * @openapi
+ * /api/authcode/verify:
+ *   post:
+ *     description: 验证邮箱验证码
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 description: 邮箱
+ *               code:
+ *                 type: string
+ *                 description: 邮箱验证码
+ *             required:
+ *               - email
+ *               - password
+ *             example:
+ *               email: 156132264@qq.com
+ *               code: 123456
+ *     responses:
+ *       200:
+ *         description: 返回是否能注册
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success: 
+ *                   type: boolean
+ *                 canRegister: 
+ *                   type: boolean
+ *         example:
+ *           success: true
+ *           canRegister: true    
+ */
 
 const cors = Cors({
   methods: ['POST', 'GET', 'HEAD'],

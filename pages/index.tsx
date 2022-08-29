@@ -13,6 +13,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const spec: Record<string, any> = createSwaggerSpec({
     apiFolder: "pages/api",
     schemaFolders: ["models"],
+    title: '登录模块',
     definition: {
       openapi: "3.0.0",
       info: {
