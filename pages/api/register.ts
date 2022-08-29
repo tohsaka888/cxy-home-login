@@ -2,7 +2,9 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import Cors from 'cors'
 import { runMiddleware } from '@utils/server/runMiddleware'
-import { connectDB } from '@utils/server/connectDB'
+import { connectDB } from "@utils/server/connectDB";
+
+console.log('run')
 
 /**
  * @openapi

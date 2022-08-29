@@ -2,7 +2,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import Cors from 'cors'
 import { runMiddleware } from '@utils/server/runMiddleware'
-import { connectDB } from '@utils/server/connectDB'
+import { connectDB } from "@utils/server/connectDB";
 import { generateAccessToken } from '@utils/server/generateAccessToken'
 
 /**
@@ -59,10 +59,10 @@ export default async function handler(
   res: NextApiResponse<any>
 ) {
   try {
-
     // Run the middleware
     await runMiddleware(req, res, cors)
     const db = await connectDB()
+    
     if (db) {
       // select collection
       const users = await db.collection('users')
