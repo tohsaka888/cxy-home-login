@@ -9,26 +9,26 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "cors": "^2.8.5",
-    "jsonwebtoken": "^8.5.1",
-    "mongodb": "^4.9.0",
+    "cors": "2.8.5",
+    "jsonwebtoken": "8.5.1",
+    "mongodb": "4.9.0",
     "next": "12.2.5",
-    "next-swagger-doc": "^0.3.6",
-    "nodemailer": "^6.7.8",
+    "next-swagger-doc": "0.3.6",
+    "nodemailer": "6.7.8",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.12",
-    "@types/jsonwebtoken": "^8.5.9",
+    "@types/cors": "2.8.12",
+    "@types/jsonwebtoken": "8.5.9",
     "@types/node": "18.7.13",
-    "@types/nodemailer": "^6.4.5",
+    "@types/nodemailer": "6.4.5",
     "@types/react": "18.0.17",
     "@types/react-dom": "18.0.6",
-    "@types/swagger-ui-react": "^4.11.0",
+    "@types/swagger-ui-react": "4.11.0",
     "eslint": "8.23.0",
     "eslint-config-next": "12.2.5",
-    "swagger-ui-react": "^4.14.0",
+    "swagger-ui-react": "4.14.0",
     "typescript": "4.8.2"
   }
 }
