@@ -63,7 +63,6 @@ export default async function handler(
     // Run the middleware
     await runMiddleware(req, res, cors)
     const db = await connectDB()
-    console.log(req.body)
     if (db) {
       // select collection
       const users = await db.collection('users')
