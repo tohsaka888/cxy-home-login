@@ -1,3 +1,10 @@
+/*
+ * @Author: tohsaka888
+ * @Date: 2022-09-02 14:10:35
+ * @LastEditors: tohsaka888
+ * @LastEditTime: 2022-09-14 10:37:29
+ * @Description: 请填写简介
+ */
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
 import Cors from 'cors'
@@ -70,7 +77,7 @@ export default async function handler(
 
       const body: { email: string; password: string } = req.body
       const result = await users.findOne({ ...body })
-      const token = generateAccessToken(result?.username || '')
+      const token = generateAccessToken({ email: result?.email, username: result?.username })
 
       res.status(200).json({ success: true, canLogin: result ? true : false, token })
     } else {
