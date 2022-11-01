@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@types/cors': 2.8.12
   '@types/jsonwebtoken': 8.5.9
-  '@types/node': 18.7.13
+  '@types/node': 18.11.9
   '@types/nodemailer': 6.4.6
   '@types/react': 18.0.17
   '@types/react-dom': 18.0.6
@@ -34,7 +34,7 @@ dependencies:
 devDependencies:
   '@types/cors': 2.8.12
   '@types/jsonwebtoken': 8.5.9
-  '@types/node': 18.7.13
+  '@types/node': 18.11.9
   '@types/nodemailer': 6.4.6
   '@types/react': 18.0.17
   '@types/react-dom': 18.0.6
@@ -327,16 +327,16 @@ packages:
   /@types/jsonwebtoken/8.5.9:
     resolution: {integrity: sha512-272FMnFGzAVMGtu9tkr29hRL6bZj4Zs1KZNeHLnKqAvp06tAIcarTMwOh8/8bz4FmKRcMxZhZNeUAQsNLoiPhg==}
     dependencies:
-      '@types/node': 18.7.13
+      '@types/node': 18.11.9
     dev: true
 
-  /@types/node/18.7.13:
-    resolution: {integrity: sha512-46yIhxSe5xEaJZXWdIBP7GU4HDTG8/eo0qd9atdiL+lFpA03y8KS+lkTN834TWJj5767GbWv4n/P6efyTFt1Dw==}
+  /@types/node/18.11.9:
+    resolution: {integrity: sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==}
 
   /@types/nodemailer/6.4.6:
     resolution: {integrity: sha512-pD6fL5GQtUKvD2WnPmg5bC2e8kWCAPDwMPmHe/ohQbW+Dy0EcHgZ2oCSuPlWNqk74LS5BVMig1SymQbFMPPK3w==}
     dependencies:
-      '@types/node': 18.7.13
+      '@types/node': 18.11.9
     dev: true
 
   /@types/prop-types/15.7.5:
@@ -387,7 +387,7 @@ packages:
   /@types/whatwg-url/8.2.2:
     resolution: {integrity: sha512-FtQu10RWgn3D9U4aazdwIE2yzphmTJREDqNdODHrbrZmmMqI0vMheC/6NE/J1Yveaj8H+ela+YwWTjq5PGmuhA==}
     dependencies:
-      '@types/node': 18.7.13
+      '@types/node': 18.11.9
       '@types/webidl-conversions': 6.1.1
     dev: false
 
