@@ -6,7 +6,7 @@ specifiers:
   '@types/node': 18.7.13
   '@types/nodemailer': 6.4.6
   '@types/react': 18.0.17
-  '@types/react-dom': 18.0.6
+  '@types/react-dom': 18.0.9
   '@types/swagger-ui-react': 4.11.0
   cors: 2.8.5
   eslint: 8.23.1
@@ -37,7 +37,7 @@ devDependencies:
   '@types/node': 18.7.13
   '@types/nodemailer': 6.4.6
   '@types/react': 18.0.17
-  '@types/react-dom': 18.0.6
+  '@types/react-dom': 18.0.9
   '@types/swagger-ui-react': 4.11.0
   eslint: 8.23.1
   eslint-config-next: 12.2.5_nbcbbd7lfrdtsoifdu7ts5ch5u
@@ -343,8 +343,8 @@ packages:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: true
 
-  /@types/react-dom/18.0.6:
-    resolution: {integrity: sha512-/5OFZgfIPSwy+YuIBP/FgJnQnsxhZhjjrnxudMddeblOouIodEQ75X14Rr4wGSG/bknL+Omy9iWlLo1u/9GzAA==}
+  /@types/react-dom/18.0.9:
+    resolution: {integrity: sha512-qnVvHxASt/H7i+XG1U1xMiY5t+IHcPGUK7TDMDzom08xa7e86eCeKOiLZezwCKVxJn6NEiiy2ekgX8aQssjIKg==}
     dependencies:
       '@types/react': 18.0.17
     dev: true
