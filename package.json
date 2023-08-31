@@ -11,7 +11,7 @@
   "dependencies": {
     "cors": "2.8.5",
     "jsonwebtoken": "8.5.1",
-    "mongodb": "4.9.1",
+    "mongodb": "4.17.0",
     "next": "12.2.5",
     "next-swagger-doc": "0.3.6",
     "nodemailer": "6.7.8",
