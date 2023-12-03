@@ -19,7 +19,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@types/cors": "2.8.12",
+    "@types/cors": "2.8.17",
     "@types/jsonwebtoken": "8.5.9",
     "@types/node": "18.7.13",
     "@types/nodemailer": "6.4.6",

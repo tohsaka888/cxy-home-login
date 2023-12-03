@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@types/cors': 2.8.12
+  '@types/cors': 2.8.17
   '@types/jsonwebtoken': 8.5.9
   '@types/node': 18.7.13
   '@types/nodemailer': 6.4.6
@@ -32,7 +32,7 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
 
 devDependencies:
-  '@types/cors': 2.8.12
+  '@types/cors': 2.8.17
   '@types/jsonwebtoken': 8.5.9
   '@types/node': 18.7.13
   '@types/nodemailer': 6.4.6
@@ -299,8 +299,10 @@ packages:
       tslib: 2.4.0
     dev: false
 
-  /@types/cors/2.8.12:
-    resolution: {integrity: sha512-vt+kDhq/M2ayberEtJcIN/hxXy1Pk+59g2FV/ZQceeaTyCtCucjL2Q7FXlFjtWn4n15KCr1NE2lNNFhp0lEThw==}
+  /@types/cors/2.8.17:
+    resolution: {integrity: sha512-8CGDvrBj1zgo2qE+oS3pOCyYNqCPryMWY2bGfwA0dcfopWGgxs+78df0Rs3rc9THP4JkOhLsAa+15VdpAqkcUA==}
+    dependencies:
+      '@types/node': 18.7.13
     dev: true
 
   /@types/hast/2.3.4:
