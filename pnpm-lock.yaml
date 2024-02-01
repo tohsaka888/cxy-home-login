@@ -15,7 +15,7 @@ specifiers:
   mongodb: 4.9.1
   next: 12.2.5
   next-swagger-doc: 0.3.6
-  nodemailer: 6.7.8
+  nodemailer: 6.9.9
   react: 18.2.0
   react-dom: 18.2.0
   swagger-ui-react: 4.14.0
@@ -27,7 +27,7 @@ dependencies:
   mongodb: 4.9.1
   next: 12.2.5_biqbaboplfbrettd7655fr4n2y
   next-swagger-doc: 0.3.6_next@12.2.5
-  nodemailer: 6.7.8
+  nodemailer: 6.9.9
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
@@ -1917,8 +1917,8 @@ packages:
       whatwg-url: 5.0.0
     dev: true
 
-  /nodemailer/6.7.8:
-    resolution: {integrity: sha512-2zaTFGqZixVmTxpJRCFC+Vk5eGRd/fYtvIR+dl5u9QXLTQWGIf48x/JXvo58g9sa0bU6To04XUv554Paykum3g==}
+  /nodemailer/6.9.9:
+    resolution: {integrity: sha512-dexTll8zqQoVJEZPwQAKzxxtFn0qTnjdQTchoU6Re9BUUGBJiOy3YMn/0ShTW6J5M0dfQ1NeDeRTTl4oIWgQMA==}
     engines: {node: '>=6.0.0'}
     dev: false
 
