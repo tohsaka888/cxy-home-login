@@ -4,7 +4,7 @@ specifiers:
   '@types/cors': 2.8.12
   '@types/jsonwebtoken': 8.5.9
   '@types/node': 18.7.13
-  '@types/nodemailer': 6.4.6
+  '@types/nodemailer': 6.4.15
   '@types/react': 18.0.17
   '@types/react-dom': 18.0.6
   '@types/swagger-ui-react': 4.11.0
@@ -35,7 +35,7 @@ devDependencies:
   '@types/cors': 2.8.12
   '@types/jsonwebtoken': 8.5.9
   '@types/node': 18.7.13
-  '@types/nodemailer': 6.4.6
+  '@types/nodemailer': 6.4.15
   '@types/react': 18.0.17
   '@types/react-dom': 18.0.6
   '@types/swagger-ui-react': 4.11.0
@@ -333,8 +333,8 @@ packages:
   /@types/node/18.7.13:
     resolution: {integrity: sha512-46yIhxSe5xEaJZXWdIBP7GU4HDTG8/eo0qd9atdiL+lFpA03y8KS+lkTN834TWJj5767GbWv4n/P6efyTFt1Dw==}
 
-  /@types/nodemailer/6.4.6:
-    resolution: {integrity: sha512-pD6fL5GQtUKvD2WnPmg5bC2e8kWCAPDwMPmHe/ohQbW+Dy0EcHgZ2oCSuPlWNqk74LS5BVMig1SymQbFMPPK3w==}
+  /@types/nodemailer/6.4.15:
+    resolution: {integrity: sha512-0EBJxawVNjPkng1zm2vopRctuWVCxk34JcIlRuXSf54habUWdz1FB7wHDqOqvDa8Mtpt0Q3LTXQkAs2LNyK5jQ==}
     dependencies:
       '@types/node': 18.7.13
     dev: true
